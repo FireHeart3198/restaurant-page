@@ -1,0 +1,17 @@
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js',
+    },
+    plugins: [
+        htmlWebpackPlugin({
+            template: './src/index.html',
+            inject: 'head',
+            scriptLoading: 'defer',
+        }),
+    ],
+};
