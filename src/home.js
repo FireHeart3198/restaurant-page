@@ -16,7 +16,7 @@ function loadHome() {
     const blurb4 = document.createElement('p');
     blurb4.textContent = "And who realised that sand could have so many different complexities and notes."
     const blurb5 = document.createElement('p');
-    blurb3.textContent = "You've been fruitlessly chasing the echos of that sensation into adulthood in this ever increasing safe gastronomic purview. We're here to give you that oh so nostalgic taste once again!."
+    blurb5.textContent = "You've been fruitlessly chasing the echos of that sensation into adulthood in this ever increasing safe gastronomic purview. We're here to give you that oh so nostalgic taste once again!."
 
     about.append(blurb1, blurb2, blurb3, blurb4, blurb5)
 
@@ -24,8 +24,4 @@ function loadHome() {
 
 }
 
-function check() {
-    console.log("check")
-}
-
-export { loadHome, check };
+export { loadHome };
