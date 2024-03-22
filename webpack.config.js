@@ -8,7 +8,7 @@ module.exports = {
         filename: 'main.js',
     },
     plugins: [
-        htmlWebpackPlugin({
+        new htmlWebpackPlugin({
             template: './src/index.html',
             inject: 'head',
             scriptLoading: 'defer',
