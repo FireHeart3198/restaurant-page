@@ -1,6 +1,6 @@
 const content = document.getElementById('content');
 
-function loadHome() {
+const loadHome = function() {
     const image = document.createElement('img');
     image.setAttribute("src", "/src/images/electric-image.jpg");
     image.setAttribute("height", "200px");
