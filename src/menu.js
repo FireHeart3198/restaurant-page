@@ -1,26 +1,37 @@
 const content = document.getElementById('content');
 
 const loadMenu = function() {
-    // const image = document.createElement('img');
-    // image.setAttribute("src", "/src/images/electric-image.jpg");
-    // image.setAttribute("height", "200px");
+    const menuTitle = document.createElement('h3');
+    menuTitle.textContent = "Our Menu";
 
+    const menuSubtitle = document.createElement('p');
+    menuSubtitle.textContent = "Our menu is unique to every individual that enters however here is a sampler of previous creations.";
 
-    // const about = document.createElement('div');
-    // const blurb1 = document.createElement('p');
-    // blurb1.textContent = "We're dedicated to producing a catered and curated experience to our customers who might be a bit out there in terms of taste."
-    // // const blurb2 = document.createElement('p');
-    // blurb2.textContent = "You're one of those the people who fried their tongues off by downing 10 warheads."
-    // const blurb3 = document.createElement('p');
-    // blurb3.textContent = "Who thought glue was the perfect chaser to a good nap time."
-    // const blurb4 = document.createElement('p');
-    // blurb4.textContent = "And who realised that sand could have so many different complexities and notes."
-    // const blurb5 = document.createElement('p');
-    // blurb5.textContent = "You've been fruitlessly chasing the echos of that sensation into adulthood in this ever increasing safe gastronomic purview. We're here to give you that oh so nostalgic taste once again!."
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-container');
 
-    // about.append(blurb1, blurb2, blurb3, blurb4, blurb5)
+    const pic1 = document.createElement('img');
+    pic1.setAttribute("src", "/src/images/octopus-check.jpeg");
+    pic1.setAttribute("height", "300px");
+    const pic2 = document.createElement('img');
+    pic2.setAttribute("src", "/src/images/melting-main.jpeg");
+    pic2.setAttribute("height", "300px");
+    const pic3 = document.createElement('img');
+    pic3.setAttribute("src", "/src/images/green-cake.jpeg");
+    pic3.setAttribute("height", "300px");
+    const pic4 = document.createElement('img');
+    pic4.setAttribute("src", "/src/images/pink-dessert.jpeg");
+    pic4.setAttribute("height", "300px");
+    const pic5 = document.createElement('img');
+    pic5.setAttribute("src", "/src/images/green-main.jpeg");
+    pic5.setAttribute("height", "300px");
+    const pic6 = document.createElement('img');
+    pic6.setAttribute("src", "/src/images/purple-dessert.jpeg");
+    pic6.setAttribute("height", "300px");
 
-    content.append("This is the menu page");
+    menuContainer.append(pic1, pic2, pic3, pic4, pic5, pic6)
+
+    content.append(menuTitle, menuSubtitle, menuContainer)
 
 }
 

@@ -2,6 +2,7 @@ import { loadBookings } from "./bookings.js";
 import { loadHome } from "./home.js";
 import { loadMenu } from "./menu.js";
 
+//check as images seem to work without importing
 
 function activateTabs() {
     const tabs = document.querySelectorAll('button');
