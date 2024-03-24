@@ -1,6 +1,7 @@
 import { loadBookings } from "./bookings.js";
 import { loadHome } from "./home.js";
 import { loadMenu } from "./menu.js";
+import './style.css'
 
 //check as images seem to work without importing
 
