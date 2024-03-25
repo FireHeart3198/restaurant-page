@@ -1,3 +1,5 @@
+import img1 from "/src/images/storm.jpeg";
+
 const content = document.getElementById('content');
 
 const loadBookings = function() {
@@ -73,7 +75,7 @@ const loadBookings = function() {
     bookingInfo.append(phone, bookingInfoContent);
 
     const picture = document.createElement('img');
-    picture.setAttribute('src', '/src/images/storm.jpeg');
+    picture.setAttribute('src', img1);
 
     bookingContainer.append(hours, bookingInfo);
 

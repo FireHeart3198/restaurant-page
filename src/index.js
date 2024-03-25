@@ -28,5 +28,5 @@ function activateTabs() {
     });
 }
 
-loadBookings();
+loadHome();
 activateTabs();

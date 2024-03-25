@@ -1,3 +1,5 @@
+import img1 from "/src/images/electric-image.jpg";
+
 const content = document.getElementById('content');
 
 const loadHome = function() {
@@ -5,7 +7,7 @@ const loadHome = function() {
     home.classList.add('home');
     
     const image = document.createElement('img');
-    image.setAttribute("src", "/src/images/electric-image.jpg");
+    image.setAttribute("src", img1);
     image.setAttribute("height", "500px");
 
     const about = document.createElement('div');
