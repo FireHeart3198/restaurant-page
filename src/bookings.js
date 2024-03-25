@@ -1,4 +1,4 @@
-import img1 from "/src/images/storm.jpeg";
+import img1 from "./images/storm.jpeg";
 
 const content = document.getElementById('content');
 

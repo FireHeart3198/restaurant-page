@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
     },
-    devtool: 'inline-source-map',
+    mode: 'production',
     plugins: [
         new htmlWebpackPlugin({
             template: './src/index.html',

@@ -1,9 +1,9 @@
-import img1 from "/src/images/octopus-check.jpeg";
-import img2 from "/src/images/melting-main.jpeg";
-import img3 from "/src/images/green-cake.jpeg";
-import img4 from "/src/images/pink-dessert.jpeg";
-import img5 from "/src/images/green-main.jpeg";
-import img6 from "/src/images/purple-dessert.jpeg";
+import img1 from "./images/octopus-check.jpeg";
+import img2 from "./images/melting-main.jpeg";
+import img3 from "./images/green-cake.jpeg";
+import img4 from "./images/pink-dessert.jpeg";
+import img5 from "./images/green-main.jpeg";
+import img6 from "./images/purple-dessert.jpeg";
 
 const content = document.getElementById('content');
 
