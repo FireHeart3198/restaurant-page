@@ -115,13 +115,9 @@ button:hover {
     padding: 20px;
 }
 
-p {
+p, h3, h4 {
     text-align: center;
     margin: 0;
-}
-
-h3 {
-    text-align: center;
 }
 
 .home {
@@ -160,4 +156,37 @@ h3 {
 .menu-container .bottom {
     grid-area: bottom;
     justify-self: end;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+}
+
+.booking-container .hours {
+    grid-column: 2;
+}
+
+.booking-container .booking-info {
+    align-self: center;
+}
+
+.booking-container p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 200px 100px;
+}
+
+img {
+    height: auto;
+    width: 490px;
+    align-self: center;
 }

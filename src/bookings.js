@@ -7,9 +7,11 @@ const loadBookings = function() {
     const phone = document.createElement('p');
     phone.textContent = "Please call 1477147177417 to make a booking";
 
+    const bookingContainer = document.createElement('div');
+    bookingContainer.classList.add('booking-container');
+
     const hours = document.createElement('div');
     hours.classList.add('hours');
-    
     const ul = document.createElement('ul');
     hours.appendChild(ul);
 
@@ -65,19 +67,17 @@ const loadBookings = function() {
     const bookingInfo = document.createElement('div');
     bookingInfo.classList.add('booking-info');
 
-    const bookingInfoTitle = document.createElement('h4');
-    bookingInfoTitle.textContent = "Booking Info";
-
     const bookingInfoContent = document.createElement('p');
-    bookingInfoContent.textContent = "Please be ready to answer an in-depth and personal questionnaire so our chefs can accurately create a wildly delicious and deliciously wild course for you.";
+    bookingInfoContent.textContent = "Be ready to answer an in-depth and personal questionnaire so our chefs can accurately create a wildly delicious and deliciously wild course for you.";
 
-    bookingInfo.append(bookingInfoTitle, bookingInfoContent);
+    bookingInfo.append(phone, bookingInfoContent);
 
     const picture = document.createElement('img');
     picture.setAttribute('src', '/src/images/storm.jpeg');
-    picture.setAttribute('height', '400px');
 
-    content.append(bookings, phone, hours, bookingInfo, picture);
+    bookingContainer.append(hours, bookingInfo);
+
+    content.append(bookings, bookingContainer, picture);
 
 }
 
