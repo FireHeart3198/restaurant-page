@@ -1,10 +1,11 @@
 const content = document.getElementById('content');
 
 const loadHome = function() {
+    const home = document.createElement('div');
+    home.classList.add('home');
+    
     const image = document.createElement('img');
     image.setAttribute("src", "/src/images/electric-image.jpg");
-    image.setAttribute("height", "200px");
-
 
     const about = document.createElement('div');
     const blurb1 = document.createElement('p');
@@ -18,9 +19,11 @@ const loadHome = function() {
     const blurb5 = document.createElement('p');
     blurb5.textContent = "You've been fruitlessly chasing the echos of that sensation into adulthood in this ever increasing safe gastronomic purview. We're here to give you that oh so nostalgic taste once again!.";
 
-    about.append(blurb1, blurb2, blurb3, blurb4, blurb5);
+    about.append(blurb2, blurb3, blurb4, blurb5);
 
-    content.append(image, about);
+    home.append(image, about);
+
+    content.append(blurb1, home)
 
 }
 
