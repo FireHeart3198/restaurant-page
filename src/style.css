@@ -85,6 +85,7 @@ button {
     appearance: none;
     font-weight: 600;
     font-family: inherit;
+    font-size: 1rem;
     box-shadow: 2px 3px 8px 2px rgba(255, 255, 255, 0.2);;
 }
 
@@ -115,14 +116,20 @@ button:hover {
     padding: 20px;
 }
 
-p, h3, h4 {
+p, h4 {
     text-align: center;
     margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .home {
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .home > img {
@@ -134,8 +141,12 @@ p, h3, h4 {
     padding: 20px 0;
 }
 
+.home > div {
+    margin-top: 60px;
+}
+
 .menu-container {
-    margin-top: 20px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: minmax(0, 70px) 1fr minmax(0,70px);
     grid-template-areas: ". top ."
@@ -151,7 +162,6 @@ p, h3, h4 {
 .menu-container .top {
     grid-area: top;
 }
-
 
 .menu-container .bottom {
     grid-area: bottom;
