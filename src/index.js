@@ -28,5 +28,5 @@ function activateTabs() {
     });
 }
 
-loadHome();
+loadMenu();
 activateTabs();

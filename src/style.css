@@ -12,7 +12,7 @@
 body {
     color: rgb(238, 221, 221);
     display: grid;
-    grid-template-columns: minmax(20px, 300px) minmax(775px, 1fr) minmax(20px, 300px);
+    grid-template-columns: minmax(20px, 300px) minmax(915px, 1fr) minmax(20px, 300px);
     margin: 0;
     height: 100vh;
     font-family: roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,7 +24,6 @@ body {
     border-right: solid 4px rgb(41, 212, 235); */
     box-shadow: 1px 0px 20px 0px rgb(83, 198, 221);
     background-color: rgb(0, 0, 0);
-
     /* background-color: #44a4ad; */
 
 }
@@ -104,12 +103,6 @@ button:hover {
     /* background-color: #6acbd473; */
 }
 
-main {
-    display: grid;
-    /* grid-template-columns: 50px 1fr 50px;
-    grid-template-areas: ". content ."; */
-}
-
 #content {
     /* background-color: #44a4ad; */
     /* background-color: #ce3b31be; */
@@ -143,4 +136,28 @@ h3 {
 
 .home p {
     padding: 20px 0;
+}
+
+.menu-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 70px) 1fr minmax(0,70px);
+    grid-template-areas: ". top ."
+                            ". bottom .";
+    background-color: rgba(250, 57, 43, 0.087);
+}
+
+.menu-container img {
+    height: 200px;
+    width: auto;
+}
+
+.menu-container .top {
+    grid-area: top;
+}
+
+
+.menu-container .bottom {
+    grid-area: bottom;
+    justify-self: end;
 }
