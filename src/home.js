@@ -1,4 +1,4 @@
-import img1 from "./images/electric-image.jpg";
+import electricImage from "./images/electric-image.jpg";
 
 const content = document.getElementById('content');
 
@@ -7,7 +7,7 @@ const loadHome = function() {
     home.classList.add('home');
     
     const image = document.createElement('img');
-    image.setAttribute("src", img1);
+    image.setAttribute("src", electricImage);
     image.setAttribute("height", "500px");
 
     const about = document.createElement('div');
